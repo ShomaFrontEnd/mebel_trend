@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@200;300;400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+  #root {
+    font-family: 'Readex Pro', sans-serif;
+
+
+    
+  }
+}
+
+
+.banner{
+  background-image: url(https://na-dache.pro/din/uploads/posts/2023-03/1678169262_na-dache-pro-p-foto-interera-razmitoe-86.jpg);
+  background-size: 100% 100%;
+}
+
+.active{
+  color: rgb(14, 177, 177);
+  /* text-decoration: underline; */
+}
+
+
+
+::-webkit-scrollbar {
+  width: 14px;
+  height: 12px;
+}
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(12, 131, 117, 0.3); 
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: rgba(41, 134, 130, 0.8); 
+  -webkit-box-shadow: inset 0 0 6px rgba(47, 58, 58, 0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(43, 158, 148, 0.4); 
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(48, 155, 149, 0.8); 
+  
+}
+
+/* Buttons */
+
+/* ::-webkit-scrollbar-button{
+  background: rgba(48, 155, 149, 0.8); 
+
+} */
+/* Track */
+
+
