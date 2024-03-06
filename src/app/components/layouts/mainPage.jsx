@@ -117,6 +117,7 @@ const product = [
 
 ]
 
+console.log(import.meta.env.VITE_SOME_KEY)
 
 
 const MainPage = () => {
