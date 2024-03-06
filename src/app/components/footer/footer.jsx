@@ -9,13 +9,19 @@ const Footer = () => {
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        <Link to="/" className="flex items-center space-x-1 bg-[#4A9F9F] rounded-s-2xl rtl:space-x-reverse">
-                            <img src="  https://us.123rf.com/450wm/wikagraphic/wikagraphic2011/wikagraphic201124797/158525890-initial-logo-tm-lowercase-letter-blue-and-pink-overlap-transparent-logo-modern-and-simple-logo.jpg?ver=6" className="h-12  rounded-s-2xl" alt="Trend mebel logo" />
+                        <Link to="/home" className="flex gap-5 px-2 justify-center md:block items-center space-x-1 bg-[#4A9F9F] rounded-s-2xl rtl:space-x-reverse">
+                            <img
+                                src="https://firebasestorage.googleapis.com/v0/b/prcqreq.appspot.com/o/logo1223.png?alt=media&token=e28897aa-dc80-4794-a449-bca82a02dad5"
+
+                                className="h-16 w-32  rounded-s-2xl" alt="Trend mebel logo" />
                             <div className="text-white">
-                                <div className="self-center text-xl font-semibold  whitespace-nowrap ">Trend </div>
-                                <div className="self-center text-xl font-semibold whitespace-nowrap ">Mebel </div>
+
                             </div>
+                            <h6 className="md:text-[10px]  text-gray-200 ">Фабрика мягкой мебели</h6>
                         </Link>
+
+                        
+
                     </div>
                     <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
                         <div>
@@ -59,7 +65,7 @@ const Footer = () => {
                     <span className="text-sm text-gray-500 sm:text-center ">© 2024 <a href="/" className="hover:underline">TrendMebel™</a>. Все права защищены.
                     </span>
                     <div className="flex mt-4 sm:justify-center sm:mt-0">
-                        <a href="instagremm.com" className="mr-3 duration-200  text-gray-500/70 hover:text-gray-300/10 hover:bg-clip-text hover:bg-gradient-to-tl from-yellow-300 via-rose-400 to-purple-600">
+                        <a href="https://www.instagram.com/mebel_trend_tomsk70" target="blank" className="mr-3 duration-200  text-gray-500/70 hover:text-gray-300/10 hover:bg-clip-text hover:bg-gradient-to-tl from-yellow-300 via-rose-400 to-purple-600">
                             <i className="bi bi-instagram text-xl  "></i>
                         </a>
                         <a href="vk.com" className="mr-3 rounded py-0.5 px-1 duration-200  text-gray-500/70 text-sm font-bold hover:bg-blue-400 hover:text-white">

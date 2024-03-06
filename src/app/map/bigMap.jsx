@@ -24,9 +24,8 @@ const BigMap = () => {
   return (
       <iframe
         ref={mapRef}
-        className="border rounded-lg"
-        width="50%"
-        height="500px"
+        className="border rounded-lg w-auto h-[30rem] sm:w-full"
+      
         sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"
       ></iframe>
   );

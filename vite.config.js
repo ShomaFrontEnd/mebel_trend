@@ -3,6 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/trend-70/",
+  // base: "/trend_70/",
   plugins: [react()],
 });

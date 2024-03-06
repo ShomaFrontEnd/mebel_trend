@@ -1,14 +1,14 @@
-import { Link } from "react-router-dom";
+import { Link,} from "react-router-dom";
 import ProductBlock from "../ui/blocks/prouctBlock";
 import BannerCarousel from "../ui/bannerCarousel";
 import Teaser from "../ui/teaser/teaser";
 import FeedbackCard from "../ui/cards/feedbackCard";
-import Map from "../../map/map"
+import BigMap from "../../map/bigMap";
 
 const product = [
   {
     id: '44qew',
-    name: 'Угловой диван Наманган',
+    name: 'Угловой диван Париж',
     imgUrl: [
       'https://batamebel.ru/upload/iblock/018/3jexipg6353y433lmqnbe1a1dovef79m/16.png',
       'https://batamebel.ru/upload/iblock/f81/c9ewx1ht0l4d8emy02d3sovbmx29qg2v/21.1.png',
@@ -30,7 +30,7 @@ const product = [
   },
   {
     id: '1221qq',
-    name: 'Андижан',
+    name: 'Эйфель',
     imgUrl: [
       'https://batamebel.ru/upload/iblock/f81/c9ewx1ht0l4d8emy02d3sovbmx29qg2v/21.1.png',
       'https://batamebel.ru/upload/iblock/018/3jexipg6353y433lmqnbe1a1dovef79m/16.png',
@@ -87,7 +87,7 @@ const product = [
       'https://batamebel.ru/upload/iblock/018/3jexipg6353y433lmqnbe1a1dovef79m/16.png',
       'https://batamebel.ru/upload/iblock/018/3jexipg6353y433lmqnbe1a1dovef79m/16.png',
       'https://batamebel.ru/upload/iblock/018/3jexipg6353y433lmqnbe1a1dovef79m/16.png',
-    ],    hit: true,
+    ], hit: true,
     new: true,
     discount: false,
     widht: 310,
@@ -108,7 +108,7 @@ const product = [
       'https://batamebel.ru/upload/iblock/018/3jexipg6353y433lmqnbe1a1dovef79m/16.png',
       'https://batamebel.ru/upload/iblock/018/3jexipg6353y433lmqnbe1a1dovef79m/16.png',
       'https://batamebel.ru/upload/iblock/018/3jexipg6353y433lmqnbe1a1dovef79m/16.png',
-    ],    hit: true,
+    ], hit: true,
     new: true,
     discount: false,
     widht: 310,
@@ -133,20 +133,19 @@ const MainPage = () => {
       <section className="container mx-auto  mb-20" >
         <Teaser />
       </section>
-
       {/* prod demon section */}
-      <section className="container mx-auto  mb-20" >
+      <section className="container mx-auto mb-20 px-2 sm:px-0" >
         <div className="flex items-center justify-between mb-12">
-          <h3 className="text-5xl font-bold">Продукты</h3>
-          <Link to={'catalog'} className="text-gray-600 hover:text-[#66aaa9] cursor-pointer">каталог →</Link>
+          <h2 className="text-3xl sm:text-5xl font-bold">Продукты</h2>
+          <Link to={'/catalog'} className="text-gray-600 hover:text-[#66aaa9] cursor-pointer">каталог →</Link>
         </div>
         <ProductBlock productData={product} />
       </section>
 
       {/* users feedback section */}
-      <section className="container mx-auto  mb-20" >
+      <section className="container mx-auto mb-20 px-2 sm:px-0" >
         <div className="flex items-center justify-between mb-12">
-          <h3 className="text-5xl font-bold">Отзывы покупателей</h3>
+          <h2 className="text-3xl sm:text-5xl font-bold">Отзывы покупателей</h2>
           <Link to={'catalog'} className="text-gray-600 hover:text-[#66aaa9] cursor-pointer">все отзывы →</Link>
         </div>
         {/* raitCard */}
@@ -157,11 +156,11 @@ const MainPage = () => {
       </section>
 
       {/* adresses section */}
-      <section id="map" className="container mx-auto  mb-20" >
+      <section id="map" className="container mx-auto mb-20 px-2 sm:px-0" >
         <div className="flex justify-between">
-          <h3 className="text-5xl font-bold mb-12 flex">Наши Адреса
+          <h2 className="text-3xl sm:text-5xl font-bold mb-12 flex">Наши Адреса
             <div className="animate-bounce"><i className="bi bi-geo-alt ms-1"></i></div>
-          </h3>
+          </h2>
           <Link to={'catalog'} className="text-gray-600 hover:text-[#66aaa9] cursor-pointer">все адреса →</Link>
         </div>
 
@@ -183,8 +182,8 @@ const MainPage = () => {
               </li>
             </ul>
           </div>
-          <Map />
-          {/* <BigMap /> */}
+          {/* <Map /> */}
+          <BigMap />
 
         </div>
       </section>

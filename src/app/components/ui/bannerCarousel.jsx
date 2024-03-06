@@ -87,15 +87,16 @@ const BannerCarousel = () => {
   return (
 
 
-    <div className="relative banner h-[20rem] sm:h-[25rem] md:h-[35rem] lg:h-[42rem] overflow-hidden pt-16">
+    <div className="relative banner  sm:h-[25rem] md:h-[35rem] lg:h-[42rem] overflow-hidden pt-16">
 
-      <div className="flex sm:justify-between duration-700 container mx-auto "  >
+      <div className="flex justify-between mb-5 sm:justify-between duration-700 sm:container sm:mx-auto "  >
 
-        <div className={'  pt-20 text-gray-800 ms-20 font-bold duration-500 ' + (trans ? '-translate-x-[200dvh] ' : '')}>
-          <h2 className='text-[#3f817f] text-2xl sm:text-5xl mb-6'>{imgdata[activeIndex].title}</h2>
-          <h2 className='text-gray-600 text-2xl sm:text-4xl mb-12'>{imgdata[activeIndex].price}</h2>
-          <p className=' text-gray-600 w-64'>Популярная модель. 480+ продаж за последний год</p>
+        <div className={' pt-20 text-gray-800 ms-0 text-right sm:text-center font-bold duration-500 ' + (trans ? '-translate-x-[200dvh] ' : '')}>
+          <h2 className='text-[#3f817f] text-xl sm:text-5xl sm:mb-5'>{imgdata[activeIndex].title}</h2>
+          <h2 className='text-gray-600 text-xl sm:text-4xl mb-3 sm:mb-12'>{imgdata[activeIndex].price}</h2>
+          <p className=' text-gray-600 w-48 text-xs sm:w-full sm:text-base'>Популярная модель. 480+ продаж за последний год</p>
         </div>
+
         <img className={"w-3/6 2xl:w-3/6 duration-500 mt-12 " + (trans ? 'translate-x-[200dvh] ' : '')} src={imgdata[activeIndex].url} alt="divan" />
 
         {/* buttons */}

@@ -9,7 +9,7 @@ import VarrantySVG from '../../ui/svg/varrantySVG';
 
 
 
-const ProductPage = ({ product, }) => {
+const ProductPage = ({ product }) => {
   // window.scroll(0, 0)
 
   const [imageCount, setImageCount] = useState(0)
@@ -20,6 +20,7 @@ const ProductPage = ({ product, }) => {
     }
     setImageCount(prev => prev - 1);
   }
+
 
 
   const slideNext = () => {
@@ -35,14 +36,14 @@ const ProductPage = ({ product, }) => {
 
 
 
-  // console.log(product);
+  console.log(product);
 
 
   return (
     <div className="mt-28 mx-5   sm:container sm:mx-auto">
 
       <h1 className='text-5xl font-bold mb-12'>{product.name}</h1>
-      <div className='md:flex '>
+      <section className='md:flex '>
 
         <div className='mb-20'>
           <ImageCarouselControlled img={product.imgUrl} slidePrev={slidePrev} slideNext={slideNext} imageCount={imageCount} />
@@ -74,13 +75,13 @@ const ProductPage = ({ product, }) => {
           <hr />
         </div>
 
-      </div>
+      </section>
 
 
 
 
 
-      <div className='border-2 w-fit sm:flex mr-12  p-5 rounded mt-12 mb-20'>
+      <section className='border-2 w-fit sm:flex mr-12  p-5 rounded mt-12 mb-20'>
         <div className='inline-flex mr-20 items-center mb-8 sm:mb-auto'>
           <LayersSVG />
           <div className='ms-3 '>
@@ -95,25 +96,21 @@ const ProductPage = ({ product, }) => {
             <p className="text-sm text-gray-500">На весь товар действует гарантия от 12 мес.</p>
           </div>
         </div>
+      </section>
 
-      </div>
 
-
-      <div className='mb-20'>
-        <h2 className='font-bold text-2xl mb-8'>
-          Описание
-        </h2>
-
+      <section className='mb-20'>
+        <h2 className='font-bold text-2xl mb-8'>Описание</h2>
         <p className='mb-5'>
           Диван Элит прекрасно подойдет любителям минимализма. Полное отсутствие подлокотников не скрадывает полезное пространство помещения. Такая оригинальная и стильная модель, дополненная декоративными подушками, идеально подойдет для малогабаритных комнат, где каждый метр важно использовать максимально функционально. Модель не занимает много места в собранном виде, но с легкостью превращается в просторное и ровное спальное место благодаря надежному механизму еврокнижка.
         </p>
         <p>
           Крепкий каркас дивана будет служить вам долгие годы, исключая возможность деформирования. Большой выбор цветовых решений обивки даёт возможность подобрать качественную мягкую мебель под любой интерьер!
         </p>
-      </div>
+      </section>
 
 
-      <div className='mb-20'>
+      <section className='mb-20'>
         <h2 className='font-bold text-2xl mb-8'>
           Доставка и услуги
         </h2>
@@ -124,16 +121,16 @@ const ProductPage = ({ product, }) => {
           <li className='mb-2'> — Доставка по России. Во все регионы России отправляем транспортными компаниями (есть несколько вариантов на выбор, уточняйте у менеджера). </li>
           <li className=' mb-2'> — Услуги подъём и сборка мебели (оплачивается отдельно). </li>
         </ul>
-
-
-      </div>
+      </section>
 
 
 
     </div>
-
   );
 }
+
+
+
 ProductPage.propTypes = {
   product: PropTypes.object
 }

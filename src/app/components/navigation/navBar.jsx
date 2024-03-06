@@ -18,17 +18,17 @@ const NavBar = () => {
       {/* first bar */}
       <nav className="bg-gradient-to-r from-[#537A95]  to-[#4AA09F] border-gray-200 w-full">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
-          <Link to="/" className="flex items-center space-x-1 rtl:space-x-reverse">
-            <img src="  https://us.123rf.com/450wm/wikagraphic/wikagraphic2011/wikagraphic201124797/158525890-initial-logo-tm-lowercase-letter-blue-and-pink-overlap-transparent-logo-modern-and-simple-logo.jpg?ver=6" className="h-12 rounded-s-2xl" alt="Trend mebel logo" />
-            <div >
-              <div className="self-center text-xl font-semibold  whitespace-nowrap text-white">Trend</div>
-              <div className="self-center text-xl font-semibold whitespace-nowrap text-white">Mebel</div>
-            </div>
+          <Link to="/" className=" space-y-0 rtl:space-y-reverse">
+            <img
+              src="https://firebasestorage.googleapis.com/v0/b/prcqreq.appspot.com/o/logo1223.png?alt=media&token=e28897aa-dc80-4794-a449-bca82a02dad5"
+              className="h-16 w-32" alt="Trend mebel logo"
+            />
+          <h6 className="text-[10px] text-gray-300">Фабрика мягкой мебели</h6>
           </Link>
 
           {/* SOCIAL */}
           <div className="inline-flex items-center">
-            <a href="instagremm.com" className="mr-3 duration-200  text-gray-300/70 hover:text-gray-300/10 hover:bg-clip-text hover:bg-gradient-to-tl from-yellow-300 via-rose-400 to-purple-600">
+            <a href="https://www.instagram.com/mebel_trend_tomsk70" target="blank" rel="nofollow" title="Instagramm" className="mr-3 duration-200  text-gray-300/70 hover:text-gray-300/10 hover:bg-clip-text hover:bg-gradient-to-tl from-yellow-300 via-rose-400 to-purple-600">
               <i className="bi bi-instagram text-xl  "></i>
             </a>
             <a href="vk.com" className="mr-3 rounded py-0.5 px-1 duration-200  text-gray-300/70 text-sm font-bold hover:bg-blue-400 hover:text-white">
@@ -51,6 +51,7 @@ const NavBar = () => {
         className={"z-40 border-b w-full py-3 overflow-hidden overflow-x-auto duration-500 " + (!scrollDirection ? 'absolute bg-gray-300/30 ' : scrollDirection === "up" ? "fixed top-0 bg-gray-100/90" : "absolute -top-24 bg-gray-300/30 ")}>
         <div className="max-w-screen-xl px-4 py-3 md:py-5 mx-auto">
           <div className="flex items-center  ">
+            
             <ul className="flex flex-row font-medium  mt-0 space-x-8 rtl:space-x-reverse text-sm">
               <li>
                 <NavLink to={'/home'} className="text-gray-600 uppercase font-bold hover:text-[#4AA09F]">
@@ -58,7 +59,7 @@ const NavBar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to={'catalog'} className="text-gray-600 uppercase font-bold hover:text-[#4AA09F]">
+                <NavLink to={'/catalog'} className="text-gray-600 uppercase font-bold hover:text-[#4AA09F]">
                   Каталог
                 </NavLink>
               </li>

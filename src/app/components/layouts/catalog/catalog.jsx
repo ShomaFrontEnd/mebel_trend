@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductBlock from "../../ui/blocks/prouctBlock";
 import SideBar from "../../ui/sidebar";
 import Pagination from "../../navigation/pagination/pagination";
@@ -10,7 +10,7 @@ import ProductPage from "../productPage/productPage";
 const product = [
   {
     id: '44qew',
-    name: 'Угловой диван Наманган',
+    name: 'Угловой диван Париж',
     imgUrl: [
       'https://batamebel.ru/upload/iblock/f81/c9ewx1ht0l4d8emy02d3sovbmx29qg2v/21.1.png',
       'https://batamebel.ru/upload/iblock/018/3jexipg6353y433lmqnbe1a1dovef79m/16.png',
@@ -32,7 +32,7 @@ const product = [
   },
   {
     id: '1221qq',
-    name: 'Андижан',
+    name: 'Эйфель',
     imgUrl: [
       'https://batamebel.ru/upload/iblock/018/3jexipg6353y433lmqnbe1a1dovef79m/16.png',
       'https://batamebel.ru/upload/iblock/f81/c9ewx1ht0l4d8emy02d3sovbmx29qg2v/21.1.png',
@@ -123,7 +123,8 @@ const product = [
 
 const CatalogPage = () => {
   const { productPage, id } = useParams()
-  console.log();
+  
+
   const amountContetntInPage = 8
 
   const [sortOpen, setSortOpen] = useState(false)
@@ -136,6 +137,9 @@ const CatalogPage = () => {
     console.log({ sortQuery });
   }
 
+  useEffect(() => {
+    window.scroll(0, 0)
+  }, []);
 
   //------ Handlers ---------------------------------------------------------------------------------------------------------------------------------
   const handleNextPage = () => {
