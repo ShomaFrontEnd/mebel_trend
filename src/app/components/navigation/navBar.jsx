@@ -64,7 +64,7 @@ const NavBar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to={'/company'} className="text-gray-600 uppercase font-bold hover:text-[#4AA09F]">
+                <NavLink to={'/about'} className="text-gray-600 uppercase font-bold hover:text-[#4AA09F]">
                   Компания
                 </NavLink>
               </li>

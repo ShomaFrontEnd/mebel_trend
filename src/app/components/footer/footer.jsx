@@ -9,15 +9,17 @@ const Footer = () => {
             <div className="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
                 <div className="md:flex md:justify-between">
                     <div className="mb-6 md:mb-0">
-                        <Link to="/home" className="flex gap-5 px-2 justify-center md:block items-center space-x-1 bg-[#4A9F9F] rounded-s-2xl rtl:space-x-reverse">
-                            <img
+                        <Link to="/home" className="flex gap-5 px-2 justify-center md:block items-center space-x-1   rtl:space-x-reverse">
+                            {/* <img
                                 src="https://firebasestorage.googleapis.com/v0/b/prcqreq.appspot.com/o/logo1223.png?alt=media&token=e28897aa-dc80-4794-a449-bca82a02dad5"
 
-                                className="h-16 w-32  rounded-s-2xl" alt="Trend mebel logo" />
+                                className="h-16 w-32  rounded-s-2xl" alt="Trend mebel logo" /> */}
+        <img className="h-16 w-32 " src="public/logotrendmebel.png" alt="Mebel trend logo" />
+
                             <div className="text-white">
 
                             </div>
-                            <h6 className="md:text-[10px]  text-gray-200 ">Фабрика мягкой мебели</h6>
+                            <h6 className="md:text-[10px]  text-[#2c9599] ">Фабрика мягкой мебели</h6>
                         </Link>
 
                         

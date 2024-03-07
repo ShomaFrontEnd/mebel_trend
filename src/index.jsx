@@ -13,6 +13,7 @@ import {
 import App from './App.jsx'
 import CatalogPage from './app/components/layouts/catalog/catalog.jsx'
 import MainPage from './app/components/layouts/mainPage.jsx'
+import AboutUs from './app/components/layouts/aboutUs/aboutUs.jsx'
 
 
 const router = createHashRouter(
@@ -23,8 +24,8 @@ const router = createHashRouter(
     }>
       <Route path='home' element={<MainPage />} />
       <Route path='catalog/:productPage?/:id?' element={<CatalogPage />} />
-      {/* <Route path='about' element={''} />
-      <Route path='promotion' element={''} />
+      <Route path='about' element={<AboutUs />} />
+      {/*<Route path='promotion' element={''} />
       <Route path='login' element={''} />
       <Route path='logout' element={''} />
       <Route path='/networkError' element={''} />

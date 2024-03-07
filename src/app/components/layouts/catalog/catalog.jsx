@@ -3,7 +3,8 @@ import ProductBlock from "../../ui/blocks/prouctBlock";
 import SideBar from "../../ui/sidebar";
 import Pagination from "../../navigation/pagination/pagination";
 import { useParams } from "react-router-dom";
-import ProductPage from "../productPage/productPage";
+import ProductPage from "../../pages/productPage/productPage";
+
 
 
 
